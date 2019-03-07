@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SERVER_SIDE_RSA;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,9 @@ namespace ENCRYPTION_DEMO
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+
+            CORE_MODULE.Initialize(4096);
+
         }
     }
 }

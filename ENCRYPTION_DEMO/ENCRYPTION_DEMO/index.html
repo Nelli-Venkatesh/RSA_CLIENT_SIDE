@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body ng-app="eKYC" ng-controller="Testing_Controller">
+
+    <button type="button" class="btn btn-danger" ng-click="rsa_get();"> RSA GET </button>
+    <button type="button" class="btn btn-default" ng-click="rsa_post();"> RSA POST </button>
+    <button type="button" class="btn btn-default" ng-click="rsa_token_get();"> RSA TOKEN GET </button>
+    <button type="button" class="btn btn-default" ng-click="rsa_token_post();"> RSA TOKEN POST </button>
+
+    <script src="jquery.min.js"></script>
+    <script src="angular.min.js"></script>
+
+    <!--RSA Encryption Dependencies-->
+    <script src="RSA_MODULE.js"></script>
+    <!--RSA Encryption Dependencies-->
+    <!--AES Encryption Dependencies-->
+    <script src="AES_MODULE.js"></script>
+    <!--AES Encryption Dependencies-->
+
+    <script src="NETWORK.js"></script>
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>
