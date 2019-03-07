@@ -21,7 +21,9 @@
             pre_path = "/" + location.pathname.split("/")[1];
         }
 
-        var end_encrypt_post = function (url_path, data_object, public_key, private_key, success_callback, failure_callback, return_encrypt = true) {
+        var end_encrypt_post = function (url_path, data_object, public_key, private_key, success_callback, failure_callback, return_encrypt) {
+
+            return_encrypt = typeof return_encrypt === 'undefined' ? true : return_encrypt;
 
             if (url_path == "" || url_path == undefined || url_path == null) {
                 alert("URL should not be empty !!!");
@@ -105,7 +107,10 @@
             });
         };
 
-        var end_encrypt_get = function (url_path, data_object, public_key, private_key, success_callback, failure_callback, return_encrypt = true) {
+        var end_encrypt_get = function (url_path, data_object, public_key, private_key, success_callback, failure_callback, return_encrypt) {
+
+            return_encrypt = typeof return_encrypt === 'undefined' ? true : return_encrypt;
+
             if (url_path == "" || url_path == undefined || url_path == null) {
                 alert("URL should not be empty !!!");
                 return;
@@ -187,7 +192,10 @@
             });
         };
 
-        var token_encrypt_post = function (url_path, data_object, public_key, private_key, token, success_callback, failure_callback, return_encrypt = true) {
+        var token_encrypt_post = function (url_path, data_object, public_key, private_key, token, success_callback, failure_callback, return_encrypt) {
+
+            return_encrypt = typeof return_encrypt === 'undefined' ? true : return_encrypt;
+
 
             if (url_path == "" || url_path == undefined || url_path == null) {
                 alert("URL should not be empty !!!");
@@ -274,7 +282,11 @@
             });
         };
 
-        var token_encrypt_get = function (url_path, data_object, public_key, private_key, token, success_callback, failure_callback, return_encrypt = true) {
+        var token_encrypt_get = function (url_path, data_object, public_key, private_key, token, success_callback, failure_callback, return_encrypt) {
+
+            return_encrypt = typeof return_encrypt === 'undefined' ? true : return_encrypt;
+
+
             if (url_path == "" || url_path == undefined || url_path == null) {
                 alert("URL should not be empty !!!");
                 return;
