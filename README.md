@@ -2,7 +2,7 @@
 Encryption of data using RSA Encryption with different key sizes and uses token based Authentication and JWT style signature verification.
 
 ### Example
-`
+``` markdown
   scope.rsa_get = function () {
             var req = {
                 ID: "1",
@@ -14,7 +14,7 @@ Encryption of data using RSA Encryption with different key sizes and uses token 
             }, function (status, data) {
             }, true);
         };
- `
+ ```
 
 ### Usage
 
