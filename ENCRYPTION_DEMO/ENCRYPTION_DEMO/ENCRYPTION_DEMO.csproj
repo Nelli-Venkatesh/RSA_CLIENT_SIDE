@@ -85,15 +85,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AES_MODULE.js" />
     <Content Include="angular.min.js" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="jquery.min.js" />
-    <Content Include="NETWORK.js" />
-    <Content Include="network.min.js" />
-    <Content Include="RSA_MODULE.js" />
     <Content Include="app.js" />
+    <Content Include="SecureSpace.min.js" />
+    <Content Include="SECURE_SPACE_NC.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
